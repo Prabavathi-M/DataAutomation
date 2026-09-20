@@ -1,0 +1,17 @@
+# Local configuration and credentials
+config.json
+creds.env
+**/creds.env
+
+# Local editor and environment files
+.vscode/
+.venv/
+venv/
+
+# Python-generated files
+__pycache__/
+__pychache__/
+*.py[cod]
+
+# Local learning exercises
+python_excersices/

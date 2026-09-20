@@ -4,7 +4,8 @@ from pathlib import Path
 from dotenv import load_dotenv
 import snowflake.connector
 
-load_dotenv(Path(__file__).with_name("creds.env"), override=True)
+
+load_dotenv(Path(__file__).resolve().parent.parent / "creds.env", override=True)
 
 def run_snowflake_query(sql: str):
     conn = snowflake.connector.connect(
